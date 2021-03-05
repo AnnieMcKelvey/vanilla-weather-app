@@ -15,7 +15,138 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
+      <div class="card">
+        <div class="row">
+          <form class="search-form" id="city-search-form">
+            <input
+              class="enter-a-city"
+              type="search"
+              placeholder="Enter a City"
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+            />
+
+            <input class="submit" type="submit" value="Search" />
+            <button class="current-location" id="current-location-button">
+              Current Location
+            </button>
+          </form>
+        </div>
+        <br />
+        <div class="card" id="todays-weather">
+          <h1 class="city" id="display-city">Wellington</h1>
+
+          <div class="float-left">
+            <section class="date-day">
+              <h4 id="day-date">16:00, Monday</h4>
+            </section>
+          </div>
+
+          <div class="main-description-today">
+            <section class="weather-descripion">
+              <h2 id="weather-description">Mostly Cloudy</h2>
+            </section>
+          </div>
+
+          <div class="row">
+            <div class="col-sm" id="main-display-temps">
+              <div class="clearfix">
+                <span class="main-temp" id="main-temp">19</span>
+                <span id="main-degree-sign" class="main-temp">°</span>
+
+                <span class="units">
+                  <a href="#" class="temp-type" id="celsuis-link">°C</a> |
+                  <a href="#" class="temp-type" id="fahrenheit-link">°F</a>
+                </span>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="clearfix">
+                <section class="main-image">
+                  <img src="images/raining.png" alt="Raining" />
+                </section>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="clearfix">
+                <section class="wind-humidity-rain">
+                  Chance of rain: 4% <br />
+                  Humidity:
+                  <span class="humidity" id="humidity-info">50</span>
+                  % <br />
+                  Wind:
+                  <span class="wind-speed" id="wind-speed-info">5</span>
+                  mph
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+        <div class="row projections">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body week">
+                Monday <br />
+                <img src="images/sun.png" alt="sun" width="45%" />
+                <br />
+                4°
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body week">
+                Tuesday <br />
+                <img src="images/raincloud-sun.png" alt="sun" width="45%" />
+                <br />
+                7°
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body week">
+                Wednesday <br />
+                <img src="images/clouds-wind.png" alt="sun" width="45%" />
+                <br />
+                3°
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body week">
+                Thursday <br />
+                <img src="images/raincloud-sun.png" alt="sun" width="45%" />
+                <br />
+                5°
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body week">
+                Friday <br />
+                <img src="images/clouds.png" alt="sun" width="45%" />
+                <br />
+                2°
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a
+          href="https://github.com/AnnieMcKelvey/weather-app"
+          target="_blank"
+          class="footer-link"
+          >Open-source code
+        </a>
+        by Annie McKelvey
+      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>
