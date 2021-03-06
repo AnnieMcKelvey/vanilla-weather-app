@@ -61,10 +61,21 @@ h1.city {
   font-weight: 550;
 }
 
+span.main-display-temps {
+  max-width: 30px;
+}
+
 span.main-temp {
-  font-size: 50px;
+  font-size: 60px;
   color: #02599b;
   font-weight: 500;
+  line-height: 1;
+  padding-bottom: 5px;
+}
+
+span.units {
+  overflow-wrap: normal;
+  margin-top: 10px;
 }
 
 a.temp-type {
