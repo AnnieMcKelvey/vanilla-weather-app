@@ -1,5 +1,153 @@
+body {
+  background-image: linear-gradient(to bottom, rgb(4 155 255), rgb(0 0 0 / 38%)),
+    url(https://p2d7x8x2.stackpathcdn.com/wordpress/wp-content/uploads/2018/01/field-clouds-sky-earth-46160.jpg);
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: none;
+  background-size: cover;
+  opacity: 1;
+}
+
 #weather-app {
   max-width: 1200px;
   min-width: 600px;
   width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+input.submit {
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  background: #0479d0;
+  box-shadow: none;
+  border: none;
+}
+button.current-location {
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  background: #f1f2fdf5;
+  box-shadow: none;
+  border: none;
+}
+input.enter-a-city {
+  border-radius: 5px;
+  padding: 5px;
+  border: 3px solid #0479d0;
+  color: #000000;
+  margin-bottom: 5px;
+  background-color: #f5f8fad2;
+}
+
+#todays-info {
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(48deg, rgba(255, 255, 255, 0.397), #00a2e25d);
+}
+
+h1.city {
+  padding: 30px 10px 30px 0px;
+  text-align: left;
+  margin: 0 0 30px 0;
+  border-radius: 0px;
+  width: 100%;
+
+  font-size: 60px;
+}
+
+span.main-temp {
+  font-size: 50px;
+  color: #02599b;
+  font-weight: bolder;
+}
+
+a.temp-type {
+  text-decoration: none;
+  font-size: 20px;
+  color: #0676cc;
+  text-align: center;
+}
+
+section.main-image img {
+  display: block;
+  margin-bottom: -20px;
+  padding: 5px;
+  size: 100px;
+  width: 150px;
+  margin-top: -25px;
+}
+
+#main-display-temps {
+  float: left;
+}
+
+section.wind-humidity-rain {
+  margin: 30px 0;
+}
+div.card {
+  padding: 50px;
+  margin: 40px 0 0 0;
+  display: block;
+  width: 100%;
+  background: linear-gradient(48deg, white, #00a1e282);
+  border: 3px solid #d6dde2;
+}
+
+div.extra-info {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#weather-description {
+  text-transform: capitalize;
+}
+
+div.projections div.card {
+  border: none;
+  font-size: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  background: none;
+  line-height: 3;
+  text-align: center;
+  max-width: 200px;
+}
+
+div.week {
+  background: linear-gradient(48deg, rgba(255, 255, 255, 0.151), #00a2e221);
+}
+section.day-of-week {
+  display: block;
+  text-align: center;
+}
+
+section.weekly-images {
+  display: block;
+  margin: 0px;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+section.weekly-temp {
+  text-align: center;
+  color: purple;
+}
+
+footer {
+  color: white;
+  padding: 10px;
+}
+
+.footer-link {
+  color: #f49c36;
 }
