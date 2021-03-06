@@ -46,7 +46,7 @@ input.enter-a-city {
 }
 
 #todays-info {
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
   background: linear-gradient(48deg, rgba(255, 255, 255, 0.397), #00a2e25d);
 }
@@ -64,7 +64,7 @@ h1.city {
 span.main-temp {
   font-size: 50px;
   color: #02599b;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 a.temp-type {
@@ -94,7 +94,6 @@ span.wind-humidity-rain {
   top: 25px;
   line-height: 1.7px;
   text-align: left;
-  margin-bottom: 10px;
 }
 
 div.card {
