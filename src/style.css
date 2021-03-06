@@ -52,13 +52,13 @@ input.enter-a-city {
 }
 
 h1.city {
-  padding: 30px 10px 30px 0px;
+  padding: 10px 10px 10px 0px;
   text-align: left;
   margin: 0 0 30px 0;
   border-radius: 0px;
   width: 100%;
-
   font-size: 60px;
+  font-weight: 550;
 }
 
 span.main-temp {
@@ -89,6 +89,11 @@ section.main-image img {
 
 section.wind-humidity-rain {
   margin: 30px 0;
+}
+
+li {
+  list-style: none;
+  line-height: 25px;
 }
 div.card {
   padding: 50px;
