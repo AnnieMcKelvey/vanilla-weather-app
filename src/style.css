@@ -109,7 +109,7 @@ span.wind-humidity-feel {
 
 div.card.extra-info {
   padding: 15px;
-  background: linear-gradient(55deg, #d5eaf39a, #96cee49a);
+  background: linear-gradient(55deg, #d5eaf39a, #96cee400);
   min-width: max-content;
   width: 80%;
   text-align: start;
