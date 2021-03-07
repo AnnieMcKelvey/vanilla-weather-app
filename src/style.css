@@ -3,19 +3,24 @@ body {
     url(https://p2d7x8x2.stackpathcdn.com/wordpress/wp-content/uploads/2018/01/field-clouds-sky-earth-46160.jpg);
   min-width: 100%;
   min-height: 100%;
+  max-width: 100%;
   background-repeat: none;
   background-size: cover;
   opacity: 1;
+  flex-shrink: 1;
+  font-family: "Poppins", sans-serif;
+  text-size-adjust: 100%;
 }
 
 #weather-app {
   max-width: 1200px;
   min-width: 600px;
   width: 100%;
+  height: auto;
   margin: 0 auto;
   background: transparent;
-  background-size: cover;
-  font-family: "Poppins", sans-serif;
+  text-size-adjust: 100%;
+  display: block;
 }
 
 input.submit {
@@ -46,7 +51,7 @@ input.enter-a-city {
 }
 
 #todays-info {
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
   background: linear-gradient(48deg, rgba(255, 255, 255, 0.397), #00a2e25d);
 }
@@ -59,10 +64,6 @@ h1.city {
   width: 100%;
   font-size: 60px;
   font-weight: 550;
-}
-
-span.main-display-temps {
-  max-width: 30px;
 }
 
 span.main-temp {
@@ -100,11 +101,21 @@ span.main-image img {
   margin-top: 10px;
 }
 
-span.wind-humidity-rain {
-  position: relative;
-  top: 25px;
+span.wind-humidity-feel {
+  position: unset;
   line-height: 1.7px;
   text-align: left;
+}
+
+div.card.extra-info {
+  padding: 15px;
+  background: linear-gradient(55deg, #d5eaf39a, #96cee49a);
+  min-width: max-content;
+  width: 80%;
+  text-align: start;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 div.card {

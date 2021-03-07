@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="container" id="weather-app">
-      <div class="card">
+      <div class="card" id="main-card">
         <div class="row">
           <form class="search-form" id="city-search-form">
             <input
@@ -72,14 +72,20 @@
               </div>
             </div>
             <div class="col-sm">
-              <span class="wind-humidity-rain">
-                Chance of rain: 4% <br />
-                Humidity:
-                <span class="humidity" id="humidity-info">50</span>
-                % <br />
-                Wind:
-                <span class="wind-speed" id="wind-speed-info">5</span>
-                mph
+              <span class="wind-humidity-feel">
+                <div class="card extra-info">
+                  Feels like:
+                  <span class="feels-like" id="feels-like-info">4</span>°C
+                  <br />
+                </div>
+                <div class="card extra-info">
+                  Humidity:
+                  <span class="humidity" id="humidity-info">50</span>% <br />
+                </div>
+                <div class="card extra-info">
+                  Wind:
+                  <span class="wind-speed" id="wind-speed-info">5</span>mph
+                </div>
               </span>
             </div>
           </div>
