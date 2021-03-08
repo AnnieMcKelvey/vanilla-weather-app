@@ -77,6 +77,11 @@ span.main-temp {
 span.units {
   overflow-wrap: normal;
   margin-top: 10px;
+  flex-wrap: wrap;
+  min-width: fit-content;
+  padding-left: 10px;
+  padding-top: 0;
+  position: absolute;
 }
 
 a.temp-type {
@@ -108,14 +113,15 @@ span.wind-humidity-feel {
 }
 
 div.card.extra-info {
+  background: rgba(4, 124, 210, 0.473);
   padding: 15px;
-  background: linear-gradient(55deg, #d5eaf39a, #96cee400);
   min-width: max-content;
-  width: 80%;
+  width: 160px;
   text-align: start;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 1px;
   margin-bottom: 2px;
+  color: white;
 }
 
 div.card {
