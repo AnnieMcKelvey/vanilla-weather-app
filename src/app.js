@@ -54,6 +54,15 @@ function showWeather(response) {
   // Real feel
   document.querySelector("#feels-like-info").innerHTML =
     response.data.main.feels_like;
+  //Main Icon
+  // Main Icon
+  console.log(response.data.weather[0].icon);
+  document
+    .querySelector("#main-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 // Function to get exact GPS coordinates
