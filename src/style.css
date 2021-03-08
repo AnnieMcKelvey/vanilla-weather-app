@@ -101,6 +101,10 @@ span.main-image img {
   float: left;
 }
 
+div.clearfix.col-7 {
+  margin-bottom: 25px;
+}
+
 #main-display-temps {
   padding: 10px;
   margin-top: 10px;
