@@ -31,9 +31,33 @@ timeDate.innerHTML = formatDate(now);
 
 // Week 5 Retreiving Real Data
 
+let weatherIcons = {
+  "01d": `images/sun.png`,
+  "01n": `images/clear-sky-night.png`,
+  "02d": `images/sun-with-cloud.png`,
+  "02n": `images/cloudy-night.png`,
+  "03d": `images/cloud.png`,
+  "03n": `images/cloudy-night.png`,
+  "04d": `images/cloud.png`,
+  "04n": `images/cloudy-night.png`,
+  "09d": "images/raining.png",
+  "09n": "images/raining-night.png",
+  "10d": `images/raincloud-sun.png`,
+  "10n": `images/cloudy-night.png`,
+  "11d": `images/clouds-wind.png`,
+  "11n": `images/cloudy-night.png`,
+  "13d": `images/snowing.png`,
+  "13n": `images/snowing.png`,
+  "50d": "images/fog.png",
+  "50n": "images/fog.png",
+};
+
 // Function that collects data from API and displays on page
 function showWeather(response) {
   console.log(response.data);
+
+  //Added my personalised icons
+
   // Temperature
   document.querySelector("#main-temp").innerHTML = Math.round(
     response.data.main.temp
@@ -56,13 +80,14 @@ function showWeather(response) {
     response.data.main.feels_like;
   //Main Icon
   // Main Icon
-  console.log(response.data.weather[0].icon);
+  console.log(response.data.weather[0].description);
   document
     .querySelector("#main-icon")
-    .setAttribute(
-      "src",
-      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-    );
+    .setAttribute("src", weatherIcons[response.data.weather[0].icon]);
+  // Main Icon Alt text
+  document
+    .querySelector("#main-icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 
 // Function to get exact GPS coordinates
