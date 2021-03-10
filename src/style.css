@@ -107,7 +107,7 @@ span.units {
 }
 a.temp-type {
   text-decoration: none;
-  box-shadow: 0 -3px 0 rgb(244, 156, 54) inset;
+  box-shadow: 0 -2px 0 rgb(244, 156, 54) inset;
 }
 
 a.temp-type:hover {
@@ -124,7 +124,7 @@ a.temp-type:hover {
   text-decoration: none;
   color: #0676cc;
   cursor: unset;
-  font-weight: 600;
+  font-weight: 650;
   box-shadow: none;
 }
 
