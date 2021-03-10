@@ -130,3 +130,25 @@ let cityForm = document.querySelector("#city-search-form");
 cityForm.addEventListener("submit", handleSubmit);
 
 search("Truro");
+
+// Celsuis / Fahrenheit conversion
+
+function convertCelsius(event) {
+  event.preventDefault();
+  let tempretureElement = document.querySelector("#main-temp");
+  let tempreture = tempretureElement.innerHTML;
+  tempretureElement.innerHTML = Math.round(((tempreture - 32) * 5) / 9);
+}
+
+function convertFahrenheit(event) {
+  event.preventDefault();
+  let tempretureElement = document.querySelector("#main-temp");
+  let tempreture = tempretureElement.innerHTML;
+  tempretureElement.innerHTML = Math.round((tempreture * 9) / 5 + 32);
+}
+
+let celsuius = document.querySelector("#celsuis-link");
+celsuius.addEventListener("click", convertCelsius);
+
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", convertFahrenheit);
