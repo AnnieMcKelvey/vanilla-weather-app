@@ -108,6 +108,7 @@ a.temp-type {
   text-decoration: none;
   box-shadow: 0 -2px 0 rgb(244, 156, 54) inset;
   color: #02599b;
+  font-weight: 200;
 }
 
 a.temp-type:hover {
