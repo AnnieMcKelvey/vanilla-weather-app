@@ -129,4 +129,4 @@ function handleSubmit(event) {
 let cityForm = document.querySelector("#city-search-form");
 cityForm.addEventListener("submit", handleSubmit);
 
-search("Wellington");
+search("Truro");
