@@ -88,6 +88,8 @@ function showWeather(response) {
   document
     .querySelector("#main-icon")
     .setAttribute("alt", response.data.weather[0].description);
+
+  celsuiusTemperature = response.data.main.temp;
 }
 
 // Function to get exact GPS coordinates
@@ -129,26 +131,30 @@ function handleSubmit(event) {
 let cityForm = document.querySelector("#city-search-form");
 cityForm.addEventListener("submit", handleSubmit);
 
-search("Truro");
-
 // Celsuis / Fahrenheit conversion
 
-function convertCelsius(event) {
+function displayCelsius(event) {
   event.preventDefault();
   let tempretureElement = document.querySelector("#main-temp");
-  let tempreture = tempretureElement.innerHTML;
-  tempretureElement.innerHTML = Math.round(((tempreture - 32) * 5) / 9);
+  fahrenheit.classList.remove("active");
+  celsuius.classList.add("active");
+  tempretureElement.innerHTML = Math.round(celsuiusTemperature);
 }
 
-function convertFahrenheit(event) {
+function displayFahrenheit(event) {
   event.preventDefault();
   let tempretureElement = document.querySelector("#main-temp");
-  let tempreture = tempretureElement.innerHTML;
-  tempretureElement.innerHTML = Math.round((tempreture * 9) / 5 + 32);
+  celsuius.classList.remove("active");
+  fahrenheit.classList.add("active");
+  tempretureElement.innerHTML = Math.round((celsuiusTemperature * 9) / 5 + 32);
 }
 
 let celsuius = document.querySelector("#celsuis-link");
-celsuius.addEventListener("click", convertCelsius);
+celsuius.addEventListener("click", displayCelsius);
 
 let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", convertFahrenheit);
+fahrenheit.addEventListener("click", displayFahrenheit);
+
+let celsuiusTemperature = null;
+
+search("Truro");
