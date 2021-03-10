@@ -82,6 +82,7 @@ span.units {
   padding-left: 10px;
   padding-top: 0;
   position: absolute;
+
   margin-left: 10px;
 }
 
@@ -98,13 +99,22 @@ span.main-image img {
 div.clearfix.col-7 {
   margin-bottom: 25px;
 }
-a.temp-type {
-  font-size: 20px;
+
+span.units {
+  font-size: 24px;
   color: #0676cc;
   text-align: center;
-  text-decoration: underline;
+}
+a.temp-type {
+  text-decoration: none;
+  box-shadow: 0 -3px 0 rgb(244, 156, 54) inset;
 }
 
+a.temp-type:hover {
+  text-decoration: none;
+  box-shadow: 0 -8px 0 rgb(244, 156, 54) inset;
+  transition: all 0.5s;
+}
 #main-display-temps {
   padding: 10px;
   margin-top: 10px;
@@ -112,12 +122,16 @@ a.temp-type {
 
 .weather-temperature .active {
   text-decoration: none;
-  color: black;
+  color: #0676cc;
   cursor: unset;
+  font-weight: 600;
+  box-shadow: none;
 }
 
 .weather-temperature .active:hover {
   text-decoration: none;
+  box-shadow: none;
+  transition: none;
 }
 span.wind-humidity-feel {
   position: unset;
