@@ -186,8 +186,16 @@ div.projections div.card {
   max-width: 200px;
 }
 
+#forecast {
+  margin-top: 20px;
+}
+
 div.week {
   background: linear-gradient(48deg, rgba(255, 255, 255, 0.151), #00a2e221);
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 section.day-of-week {
   display: block;
