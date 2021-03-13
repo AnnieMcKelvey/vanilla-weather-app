@@ -188,6 +188,7 @@ div.projections div.card {
 
 #forecast {
   margin-top: 20px;
+  line-height: 30px;
 }
 
 div.week {
@@ -207,10 +208,6 @@ section.weekly-images {
   margin: 0px;
   text-align: center;
   padding: 10px 0px 10px 0px;
-}
-section.weekly-temp {
-  text-align: center;
-  color: purple;
 }
 
 footer {

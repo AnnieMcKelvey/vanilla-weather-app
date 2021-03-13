@@ -146,7 +146,7 @@ function displayForecast(response) {
       forecast.weather[0].description
     }" width="60%" />
                   <br />
-                  ${Math.round(forecast.main.temp_max)}°
+                  ${Math.round(forecast.main.temp_max)}°C
                  
                 </div>
               
