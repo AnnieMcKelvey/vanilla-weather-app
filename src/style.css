@@ -189,6 +189,7 @@ div.projections div.card {
 #forecast {
   margin-top: 20px;
   line-height: 30px;
+  font-size: 20px;
 }
 
 div.week {
@@ -203,11 +204,8 @@ section.day-of-week {
   text-align: center;
 }
 
-section.weekly-images {
-  display: block;
-  margin: 0px;
-  text-align: center;
-  padding: 10px 0px 10px 0px;
+img {
+  flex-wrap: 1;
 }
 
 footer {

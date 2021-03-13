@@ -144,7 +144,7 @@ function displayForecast(response) {
                   ${formatHours(forecast.dt * 1000)}<br />
                   <img src="${weatherIcons[forecast.weather[0].icon]}" alt="${
       forecast.weather[0].description
-    }" width="60%" />
+    }" width="70" />
                   <br />
                   ${Math.round(forecast.main.temp_max)}°C
                  
