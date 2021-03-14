@@ -92,7 +92,7 @@ function showWeather(response) {
   // Real feel
   document.querySelector("#feels-like-info").innerHTML =
     response.data.main.feels_like;
-  //Main Icon
+
   // Main Icon
   console.log(response.data.weather[0].description);
   document
@@ -117,6 +117,8 @@ function retrievePosition(position) {
   let apiKey = "ccd1b45bf93149af01a15dc10d440a17";
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${unit}&appid=${apiKey}`;
   axios.get(url).then(showWeather);
+  url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${unit}&appid=${apiKey}`;
+  axios.get(url).then(displayForecast);
 }
 
 function getCurrentPosition() {
